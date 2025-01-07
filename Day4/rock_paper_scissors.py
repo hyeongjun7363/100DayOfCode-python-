@@ -29,13 +29,8 @@ scissors = '''
 
 rock_paper_scissor = [rock, paper, scissors] 
 
-player_choose = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors\n")
-if player_choose == "0":
-    player_choose = rock
-elif player_choose == "1":
-    player_choose = paper
-elif player_choose == "2":
-    player_choose = scissors
+player_choose_index = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors\n"))1
+player_choose = rock_paper_scissor[player_choose_index - 1]
 
 computer_choose = random.choice(rock_paper_scissor) # computer choosing randomly at rock_paper_scissors
 
